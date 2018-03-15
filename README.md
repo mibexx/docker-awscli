@@ -15,5 +15,5 @@ docker run --rm mibexx/awscli <command>
 
 ***Example***
 ```
-docker run --rm -v ./:/data -e AWS_ACCESS_KEY_ID=123456 -e AWS_SECRET_ACCESS_KEY=d2i3uobzr23 mibexx/awscli s3 cp /data/localfile s3://bucket/remotefile
+docker run --rm -v ~/data:/data -e AWS_ACCESS_KEY_ID=123456 -e AWS_SECRET_ACCESS_KEY=d2i3uobzr23 mibexx/awscli s3 cp /data/localfile s3://bucket/remotefile
 ```
